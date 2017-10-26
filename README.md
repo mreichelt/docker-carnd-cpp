@@ -6,6 +6,7 @@ This Docker images comes with all dependencies needed for Udacity's following C+
 - [CarND-Extended-Kalman-Filter-Project](https://github.com/udacity/CarND-Extended-Kalman-Filter-Project)
 - [CarND-Unscented-Kalman-Filter-Project](https://github.com/udacity/CarND-Unscented-Kalman-Filter-Project)
 - [CarND-Path-Planning-Project](https://github.com/udacity/CarND-Path-Planning-Project)
+- [CarND-MPC-Project](https://github.com/udacity/CarND-MPC-Project)
 
 ## Requirements
 
@@ -25,6 +26,6 @@ mkdir -p build && cd build && cmake .. && make -j4 && ./path_planning
 
 I personally only use the Docker image to be able to automatically build my C++ projects with Travis. If you are interested, check out the [.travis.yml](https://github.com/mreichelt/CarND-Path-Planning-Project/blob/master/.travis.yml) file of my path planning project.
 
-## Known issues
+## Thanks
 
-Currently the [CarND-MPC-Project](https://github.com/udacity/CarND-MPC-Project) will not run because `ipopt` is not installed - I tried to add that to the Docker image as well, but had problems compiling it. Contributions welcome! 😀
+Big thanks to [Youcef Rahal](https://github.com/yrahal), who created a [Docker image](https://hub.docker.com/r/yrahal/udacity-carnd/) that includes much more functionality than just for C++ projects (includes Ubuntu UI, jupyter notebook and much more).
